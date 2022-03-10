@@ -1,0 +1,71 @@
+/* CHARACTERS SECTION */
+
+.charactersMain{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+
+}
+.characterSize{
+    width: 220px;
+    height: 220px;
+}
+.characterDiv{
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: 0.1s;
+    max-width: 220px;
+
+    &:hover{
+        max-width: 90%;
+    }
+    &:hover .characterDeployable{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.characterDeployable{
+    display: none;
+}
+
+.spongebob{
+    font-size: 1.3rem;
+    background-color: rgba(247, 241, 49,0.85);
+    font-weight: bolder;
+    color: black;
+    border-radius: 8px;
+}
+.patrick{
+    font-size: 1.3rem;
+    background-color: rgba(252, 197, 247,0.85);
+    font-weight: bolder;
+    color: black;
+    border-radius: 8px;
+}
+.squidward{
+    font-size: 1.3rem;
+    background-color: rgba(15, 103, 255,0.85);
+    font-weight: bolder;
+    color: black;
+    border-radius: 8px;
+}
+.mrcrabs{
+    font-size: 1.3rem;
+    background-color: rgba(247, 25, 25,0.85);
+    font-weight: bolder;
+    color: black;
+    border-radius: 8px;
+}
+.plankton{
+    font-size: 1.3rem;
+    background-color: rgba(29, 222, 215,0.85);
+    font-weight: bolder;
+    color: black;
+    border-radius: 8px;
+}
+/* FIN CHARACTERS SECTION */

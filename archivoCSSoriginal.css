@@ -1,0 +1,284 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ul{
+    list-style: none;
+}
+body{
+    background-color: aqua;
+}
+
+.contenedor__principal{
+    display: grid;
+    justify-content: center;
+    width: 100%;
+    gap: 10px;
+    grid-template-areas: 
+    "header"
+    "main"
+    "ads"
+    "footer"
+    ;
+}
+.spongebob__title{
+    display: none;
+}
+
+.bubblesBackground{
+    background-image: url(../images/bubbles.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.darkBackground{
+    background-color: rgb(21, 27, 41, 0.85);
+    border-radius: 8px;
+}
+
+
+
+/* HEADER */
+header{
+    background-color: #151b29;
+    display: flex;
+    max-width: 100%;
+    grid-area: header;
+
+}
+header li{
+    display: flex;
+    align-content: center;
+}
+
+.navigation{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.navigation img{
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    
+}
+
+/* FIN HEADER */
+
+/* MAIN */
+main{
+    width: 100%;
+    grid-area: main;
+    background-color: #1F43A4;
+}
+
+.main__div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main__div h1{
+    color: yellow;
+    text-align: center;
+}
+
+.main__section{
+    color: white;
+    max-width:90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.main__section img{
+    max-width: 100%;
+}
+
+.main__div a{
+    color: yellow;
+}
+
+/* FIN MAIN */
+
+/* ADS */
+aside{
+    background-color: #151b29;
+    grid-area: ads;
+}
+aside div{
+    width: 100%;
+}
+aside img{
+    max-width: 100%;
+}
+
+/* FIN ADS */
+
+
+/* FOOTER */
+footer{
+    grid-area: footer;
+    background-color: #151b29;
+    color: white;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-around;
+    max-width: 100%;
+}
+footer img{
+    width: 80px;
+    height: 80px;
+}
+
+/* FIN FOOTER */
+
+
+/* CHARACTERS SECTION */
+
+.charactersMain{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+
+}
+.characterSize{
+    width: 220px;
+    height: 220px;
+}
+.characterDiv{
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: 0.1s;
+
+    max-width: 220px;
+}
+
+.characterDeployable{
+    display: none;
+}
+
+.spongebob{
+    font-size: 1.3rem;
+    background-color: rgb(247, 241, 49,0.85);
+    font-weight: bolder;
+    color: black;
+    border-radius: 8px;
+}
+.patrick{
+    font-size: 1.3rem;
+    background-color: rgb(252, 197, 247,0.85);
+    font-weight: bolder;
+    color: black;
+    border-radius: 8px;
+}
+.squidward{
+    font-size: 1.3rem;
+    background-color: rgb(15, 103, 255,0.85);
+    font-weight: bolder;
+    color: black;
+    border-radius: 8px;
+}
+.mrcrabs{
+    font-size: 1.3rem;
+    background-color: rgb(247, 25, 25,0.85);
+    font-weight: bolder;
+    color: black;
+    border-radius: 8px;
+}
+.plankton{
+    font-size: 1.3rem;
+    background-color: rgb(29, 222, 215,0.85);
+    font-weight: bolder;
+    color: black;
+    border-radius: 8px;
+}
+.characterDiv:hover{
+    max-width: 90%;
+}
+.characterDiv:hover .characterDeployable{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* FIN CHARACTERS SECTION */
+
+/* KrustyKrab SECTION */
+
+
+.krabbypatty{
+    border-radius: 50%;
+}
+
+
+/* FIN KrustyKrab SECTION */
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 425px){
+
+    .contenedor__principal{
+
+        grid-template-areas: 
+        "header header"
+        "main   main"
+        "ads    ads"
+        "footer footer"
+        ;
+    }
+
+}
+@media screen and (min-width: 768px){
+
+    .contenedor__principal{
+
+        grid-template-areas: 
+        "header header header"
+        "ads    main   main"
+        "ads    main   main"
+        "footer footer footer"
+    ;
+    grid-template-columns: 1fr 2fr 2fr;
+    }
+    .spongebob__title{
+        display: flex;
+        align-items: center;
+        color: yellow;
+    }
+    aside{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 5px;
+    }
+    footer{
+        justify-content: center;
+    }
+    footer div{
+        margin-left: 25%;
+    }
+    .main__div a{
+        font-size: 2em;
+    }
+} 
+
+
+
+
+
+
+
+/* COLOR DE FONDO CONTENIDO #1F43A4 */

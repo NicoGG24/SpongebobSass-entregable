@@ -1,0 +1,318 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* CHARACTERS SECTION */
+.charactersMain {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 100%;
+}
+
+.characterSize {
+  width: 220px;
+  height: 220px;
+}
+
+.characterDiv {
+  margin: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+  max-width: 220px;
+}
+
+.characterDiv:hover {
+  max-width: 90%;
+}
+
+.characterDiv:hover .characterDeployable {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.characterDeployable {
+  display: none;
+}
+
+.spongebob {
+  font-size: 1.3rem;
+  background-color: rgba(247, 241, 49, 0.85);
+  font-weight: bolder;
+  color: black;
+  border-radius: 8px;
+}
+
+.patrick {
+  font-size: 1.3rem;
+  background-color: rgba(252, 197, 247, 0.85);
+  font-weight: bolder;
+  color: black;
+  border-radius: 8px;
+}
+
+.squidward {
+  font-size: 1.3rem;
+  background-color: rgba(15, 103, 255, 0.85);
+  font-weight: bolder;
+  color: black;
+  border-radius: 8px;
+}
+
+.mrcrabs {
+  font-size: 1.3rem;
+  background-color: rgba(247, 25, 25, 0.85);
+  font-weight: bolder;
+  color: black;
+  border-radius: 8px;
+}
+
+.plankton {
+  font-size: 1.3rem;
+  background-color: rgba(29, 222, 215, 0.85);
+  font-weight: bolder;
+  color: black;
+  border-radius: 8px;
+}
+
+/* FIN CHARACTERS SECTION */
+/* KrustyKrab SECTION */
+.krabbypatty {
+  border-radius: 50%;
+}
+
+/* FIN KrustyKrab SECTION */
+ul {
+  list-style: none;
+}
+
+body {
+  background-color: aqua;
+}
+
+.contenedor__principal {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  gap: 10px;
+      grid-template-areas: "header" "main" "ads" "footer";
+}
+
+.spongebob__title {
+  display: none;
+}
+
+.bubblesBackground {
+  background-image: url(../images/bubbles.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.darkBackground {
+  background-color: rgba(21, 27, 41, 0.85);
+  border-radius: 8px;
+}
+
+/* HEADER */
+header {
+  background-color: #151b29;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 100%;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: header;
+}
+
+header li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.navigation {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.navigation img {
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+}
+
+/* FIN HEADER */
+/* MAIN */
+main {
+  width: 100%;
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: main;
+  background-color: #1F43A4;
+}
+
+.main__div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main__div h1 {
+  color: yellow;
+  text-align: center;
+}
+
+.main__div a {
+  color: yellow;
+}
+
+.main__section {
+  color: white;
+  max-width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.main__section img {
+  max-width: 100%;
+}
+
+/* FIN MAIN */
+/* ADS */
+aside {
+  background-color: #151b29;
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: ads;
+}
+
+aside div {
+  width: 100%;
+}
+
+aside img {
+  max-width: 100%;
+}
+
+/* FIN ADS */
+/* FOOTER */
+footer {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: footer;
+  background-color: #151b29;
+  color: white;
+  font-size: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  max-width: 100%;
+}
+
+footer img {
+  width: 80px;
+  height: 80px;
+}
+
+/* FIN FOOTER */
+@media screen and (min-width: 425px) {
+  .contenedor__principal {
+        grid-template-areas: "header header" "main   main" "ads    ads" "footer footer";
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contenedor__principal {
+        grid-template-areas: "header header header" "ads    main   main" "ads    main   main" "footer footer footer";
+    -ms-grid-columns: 1fr 2fr 2fr;
+        grid-template-columns: 1fr 2fr 2fr;
+  }
+  .spongebob__title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: yellow;
+  }
+  aside {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 5px;
+  }
+  footer {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  footer div {
+    margin-left: 25%;
+  }
+  .main__div a {
+    font-size: 2em;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,190 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+$menuBackground: #151b29;
+@import "./characters";
+@import "./krustyKrab";
+
+
+ul{
+    list-style: none;
+}
+body{
+    background-color: aqua;
+}
+
+.contenedor__principal{
+    display: grid;
+    justify-content: center;
+    width: 100%;
+    gap: 10px;
+    grid-template-areas: 
+    "header"
+    "main"
+    "ads"
+    "footer"
+    ;
+}
+.spongebob__title{
+    display: none;
+}
+
+.bubblesBackground{
+    background-image: url(../images/bubbles.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.darkBackground{
+    background-color: rgba(21, 27, 41, 0.85);
+    border-radius: 8px;
+}
+
+
+
+/* HEADER */
+header{
+    background-color: $menuBackground;
+    display: flex;
+    max-width: 100%;
+    grid-area: header;
+
+    li{
+    display: flex;
+    align-content: center;
+    }
+}
+
+.navigation{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+
+    img{
+        border-radius: 50%;
+        width: 80px;
+        height: 80px; 
+    }
+}
+/* FIN HEADER */
+
+
+/* MAIN */
+main{
+    width: 100%;
+    grid-area: main;
+    background-color: #1F43A4;
+}
+
+.main__div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h1{
+        color: yellow;
+        text-align: center;
+    }  
+    a{
+        color: yellow;
+    }      
+}
+
+
+.main__section{
+    color: white;
+    max-width:90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    img{
+        max-width: 100%;
+    }
+}
+
+
+/* FIN MAIN */
+
+/* ADS */
+aside{
+    background-color: $menuBackground;
+    grid-area: ads;
+    div{
+        width: 100%;
+    }
+    img{
+        max-width: 100%;
+    }
+}
+/* FIN ADS */
+
+
+/* FOOTER */
+footer{
+    grid-area: footer;
+    background-color: $menuBackground;
+    color: white;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-around;
+    max-width: 100%;
+    img{
+        width: 80px;
+        height: 80px;
+    }
+}
+/* FIN FOOTER */
+
+// @media
+
+@media screen and (min-width: 425px){
+
+    .contenedor__principal{
+
+        grid-template-areas: 
+        "header header"
+        "main   main"
+        "ads    ads"
+        "footer footer"
+        ;
+    }
+
+}
+@media screen and (min-width: 768px){
+
+    .contenedor__principal{
+
+        grid-template-areas: 
+        "header header header"
+        "ads    main   main"
+        "ads    main   main"
+        "footer footer footer"
+    ;
+    grid-template-columns: 1fr 2fr 2fr;
+    }
+    .spongebob__title{
+        display: flex;
+        align-items: center;
+        color: yellow;
+    }
+    aside{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 5px;
+    }
+    footer{
+        justify-content: center;
+        div{
+            margin-left: 25%;
+        }    
+    }
+    .main__div{
+        a{
+        font-size: 2em;
+        }            
+    }
+} 
+
